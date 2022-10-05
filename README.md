@@ -17,13 +17,6 @@ clone後にプロジェクトのRootディレクトリで以下を実行
 $ docker-compose up -d
 ```
 
-### Laravel9
-```shell
-$ docker-compose exec php bash
-$ laravel new {プロジェクト名}
-$ exit
-```
-
 ### MySql
 ```shell
 $ docker-compose exec db bash
