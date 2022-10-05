@@ -40,9 +40,9 @@ $ exit
 DB_CONNECTION=mysql
 DB_HOST=db # docker-compose.ymlに記載したDBのサービス名
 DB_PORT=3306
-DB_DATABASE=sample_project # 使用するDB名
-DB_USERNAME=root
-DB_PASSWORD=root
+DB_DATABASE=laravel
+DB_USERNAME=docker
+DB_PASSWORD=docker
 ```
 
 ### http://localhost にアクセス
