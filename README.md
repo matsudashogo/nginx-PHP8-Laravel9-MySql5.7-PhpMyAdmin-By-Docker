@@ -25,6 +25,16 @@ $ CREATE DATABASE {DB名} # DB名はdocker-compose.ymlで指定した、MYSQL_DA
 $ exit
 ```
 
+### Laravel
+```shell
+$ docker-compose exec php bash
+$ cd laravel9
+$ cp .env.example .env
+$ composer install
+$ php artisan key:generate
+$ exit
+```
+
 ### Laravelのプロジェクトファイル内の.envファイルを下記に修正
 ```.env:title
 DB_CONNECTION=mysql
@@ -34,3 +44,5 @@ DB_DATABASE=sample_project # 使用するDB名
 DB_USERNAME=root
 DB_PASSWORD=root
 ```
+
+### http://localhostにアクセス
