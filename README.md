@@ -20,17 +20,15 @@ $ docker-compose up -d
 ### MySql
 ```shell
 $ docker-compose exec db bash
-$ mysql -u root -p 
-$ # パスワードはdocker-compose.ymlで指定したMYSQL_ROOT_PASSWORD
-$ CREATE DATABASE {DB名}
-$ # DB名はdocker-compose.ymlで指定した、MYSQL_DATABASEと合わせる
+$ mysql -u root -p # パスワードはdocker-compose.ymlで指定したMYSQL_ROOT_PASSWORD
+$ CREATE DATABASE {DB名} # DB名はdocker-compose.ymlで指定した、MYSQL_DATABASEと合わせる
 $ exit
 ```
 
 ### Laravelのプロジェクトファイル内の.envファイルを下記に修正
 ```.env:title
 DB_CONNECTION=mysql
-DB_HOST=db　# docker-compose.ymlに記載したDBのサービス名
+DB_HOST=db # docker-compose.ymlに記載したDBのサービス名
 DB_PORT=3306
 DB_DATABASE=sample_project # 使用するDB名
 DB_USERNAME=root
