@@ -45,4 +45,4 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
-### http://localhostにアクセス
+### http://localhost にアクセス
